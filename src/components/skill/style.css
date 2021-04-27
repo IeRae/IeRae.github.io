@@ -1,0 +1,116 @@
+ /* ===================================================================
+  *  11. skills - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- */
+  #skills {
+    background-color: #1f0e01;
+    background-image: url(../../images/skills-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 800px;
+    position: relative;
+    padding: 12rem 0 9.6rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#skills .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-color: #000000;
+}
+
+#skills .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, black 0%, black 20%, transparent 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);  /* IE6-9 */
+}
+
+#skills .row {
+    position: relative;
+}
+
+#skills [class="col-skills"] {
+    width: 50%;
+    padding-right: 0;
+}
+
+#skills .section-intro {
+    text-align: left;
+}
+
+#skills .section-intro h3 {
+    color: rgba(255, 255, 255, 0.35);
+    color: #7c3b08;
+}
+
+#skills .section-intro h1 {
+    color: #FFFFFF;
+}
+
+#skills .skill-bars {
+    margin-top: 8.4rem;
+}
+
+#skills .skill-bars li {
+    background: #7c3b08;
+    margin-bottom: 7.2rem;
+}
+
+#skills .skill-bars li strong {
+    color: #FFFFFF;
+}
+
+#skills .skill-bars li .progress {
+    background: #FFFFFF;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * skills
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:1024px) {
+    #skills [class="col-skills"] {
+        width: 75%;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    #skills .section-intro {
+        text-align: center;
+    }
+
+    #skills [class="col-skills"] {
+        width: 100%;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    #skills [class="col-skills"] {
+        padding-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    #skills [class="col-skills"] {
+        padding-right: 0;
+    }
+
+}

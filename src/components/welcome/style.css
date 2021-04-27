@@ -1,0 +1,315 @@
+
+ /* ===================================================================
+  *  09. home - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- */
+  #home {
+    background: #151515;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../images/intro-bg.jpg); */
+    background-image: url(../../images/intro-bg-test.jpg);
+    /* image url */
+    /* https://www.dreamstime.com/stock-photo-artificial-intelligence-ai-data-mining-expert-system-software-genetic-programming-machine-learning-deep-learning-neural-networks-image85398275 */
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 804px;
+    position: relative;
+}
+
+#home .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, black 0%, black 20%, transparent 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);  /* IE6-9 */
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    /* background-color: #000000; */
+}
+
+.home-content-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+    margin-top: 5%;
+}
+
+.home-content-tablecell {
+    display: table-cell;
+    vertical-align: bottom;
+    z-index: 500;
+}
+
+.home-content-tablecell .row {
+    position: relative;
+    padding-top: 4.2rem;
+    padding-bottom: 15rem;
+}
+
+.home-content-tablecell h3 {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    margin: 0 0 2rem 6.3rem;
+}
+
+.home-content-tablecell h1 {
+    font-family: "librebaskerville-bold", serif;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin: 8rem 0 0 0;
+}
+
+.home-content-tablecell h1 p{
+   font-size: 5.2rem;
+}
+
+.home-content-tablecell .home-section-links {
+    display: inline-block;
+    list-style: none;
+    margin: 28.8rem 0 0 0;
+}
+
+.home-content-tablecell .home-section-links li {
+    display: inline-block;
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin-right: 1.5rem;
+    margin-bottom: .6rem;
+}
+
+.home-content-tablecell .home-section-links li:last-child {
+    margin-right: 0;
+}
+
+.home-content-tablecell .home-section-links a {
+    font-family: "librebaskerville-regular", serif;
+    font-size: 1.8rem;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    margin-left: .3rem;
+}
+
+.scroll-icon {
+    position: absolute;
+    width: 60px;
+    height: 48px;
+    font-size: 3.3rem;
+    bottom: 30px;
+    right: 20px;
+    color: #FFFFFF !important;
+    -webkit-animation: vertical 3s ease infinite;
+    animation: vertical 3s ease infinite;
+}
+
+
+.over {
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    margin-left: -50px;
+    top: 15%;
+    margin-top: -50px;
+}
+
+.under {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* vertical animation */
+@-webkit-keyframes vertical {
+    0%,
+    60%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+
+    20% {
+        -webkit-transform: translateY(-5px);
+    }
+
+    40% {
+        -webkit-transform: translateY(20px);
+    }
+
+}
+
+@keyframes vertical {
+    0%,
+    60%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+
+    20% {
+        -webkit-transform: translateY(-5px);
+    }
+
+    40% {
+        -webkit-transform: translateY(20px);
+    }
+
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * home section 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:1200px) {
+    .home-content-tablecell h3 {
+        font-size: 2.1rem;
+    }
+
+    .home-content-tablecell h1 {
+        font-size: 5rem;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .home-content-tablecell h3 {
+        font-size: 2rem;
+    }
+
+    .home-content-tablecell h1 {
+        font-size: 4.8rem;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .home-content-tablecell .row {
+        padding-bottom: 11.4rem;
+    }
+
+    .home-content-tablecell .home-bottom-text {
+        padding-right: 15%;
+    }
+
+    .home-content-tablecell h3 {
+        font-size: 1.8rem;
+    }
+
+    .home-content-tablecell h1 {
+        font-size: 4rem;
+    }
+
+    .home-content-tablecell h1 br {
+        display: none;
+    }
+
+    .home-content-tablecell .home-section-links {
+        margin: 15.2rem 0 0 0;
+    }
+
+    .home-content-tablecell .home-section-links li {
+        font-size: 1.3rem;
+    }
+
+    .home-content-tablecell .home-section-links a {
+        font-size: 1.6rem;
+    }
+
+    .scroll-icon {
+        right: 15px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    #home {
+        min-height: 702px;
+    }
+
+    .home-content-tablecell {
+        vertical-align: middle;
+    }
+
+    .home-content-tablecell .row {
+        padding-top: 9rem;
+        padding-bottom: 3rem;
+    }
+
+    .home-content-tablecell .home-bottom-text {
+        padding-right: 10%;
+    }
+
+    .home-content-tablecell h3 {
+        font-size: 1.7rem;
+    }
+
+    .home-content-tablecell h1 {
+        font-size: 3.8rem;
+    }
+
+    .scroll-icon {
+        right: 10px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    .home-content-tablecell .home-bottom-text {
+        padding-right: 5%;
+    }
+
+    .home-content-tablecell h3 {
+        font-size: 1.5rem;
+    }
+
+    .home-content-tablecell h1 {
+        font-size: 3.4rem;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    #home {
+        min-height: 654px;
+    }
+
+    .home-content-tablecell .home-bottom-text {
+        padding-right: 0;
+    }
+
+    .home-content-tablecell h3 {
+        font-size: 1.4rem;
+    }
+
+    .home-content-tablecell h1 {
+        font-size: 3.2rem;
+    }
+
+    .home-content-tablecell .home-section-links {
+        margin: 15.5rem 0 0 0;
+    }
+
+}

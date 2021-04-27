@@ -1,0 +1,119 @@
+ /* ===================================================================
+  *  17. vision - (_layout.scss)
+  *
+  * ------------------------------------------------------------------- */
+#vision {
+    /* background: #FFFFFF; */
+    background: #EBEBEB;
+    position: relative;
+    padding: 12rem 0 9rem;
+}
+
+#vision .vision-content {
+    display: flex;
+    text-align: center;
+}
+
+#vision .vision-content h2 {
+    margin-bottom: 4.8rem;
+    color: #6f9aca;
+    padding-left: 8rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    position: relative;
+}
+
+#vision .vision-content h2::before {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 4rem;
+    background-color: #aeaeae;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    margin-top: -3px;
+}
+
+#vision .vision-content h3 {
+    margin-bottom: 4.8rem;
+    color: #6f9aca;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    position: relative;
+}
+
+#vision .left {
+    /* margin: 1rem 0 0 0; */
+    flex: 1;
+}
+
+#vision .middle {
+    /* margin: 1rem 0 0 0; */
+    flex: 1;
+}
+
+#vision .right {
+    /* margin: 1rem 0 0 0; */
+    flex: 1;
+}
+
+.vision-icon {
+    height: 170px;
+    width: 172px;
+    margin: .5rem;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * credentials
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:1024px) {
+
+    .vision-icon {
+        height: 150px;
+        width: 152px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    #vision .vision-content h2 {
+        padding: 0;
+        text-align: center;
+    }
+
+    #vision .vision-content h2::before {
+        display: none;
+    }
+
+    .vision-icon {
+        height: 130px;
+        width: 132px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #vision .vision-content{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    #credentials .timeline-header .timeframe {
+        font-size: 1.5rem;
+    }
+
+    #credentials .timeline-header h3 {
+        font-size: 2.2rem;
+    }
+
+    #credentials .timeline-block {
+        padding-left: 6rem;
+    }
+
+}
